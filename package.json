@@ -1,5 +1,7 @@
 {
   "name": "bread_trail_2042",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "bulma": "^0.7.5"
+  }
 }
