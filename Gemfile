@@ -33,12 +33,26 @@ gem 'bcrypt', '~> 3.1.7'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+
+gem 'bulma-rails', '~> 0.6.1'
+gem 'simple_form'
+gem 'devise', '~> 4.4'
+gem 'gravatar_image_tag', '~> 1.2'
+gem 'carrierwave'
+gem 'mini_magick'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+
+  gem 'capybara', '~> 2.13'
+  gem 'selenium-webdriver'
+  gem 'better_errors', '~> 2.4'
+  gem 'guard', '~> 2.14', '>= 2.14.1'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
 end
 
 group :development do
